@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    li {
+        list-style: none;
+        margin: 30px;
+    }
+
+    i {
+        font-size: 30px;
+        color: gray;
+    }
+
+    h4 {
+        margin: 70px;
+        font-size: 20px;
+    }
+}
+
+
+#facebook i:hover {
+    @extend %facebook;
+}
+
+#instagram i:hover {
+    @extend %instagram;
+}
+
+
+#twitter i:hover {
+    @extend %twitter;
+}
+
+#whatsapp i:hover {
+    @extend %whatsapp;
+}
+
+#autor {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import './variables/variables.scss';
+
+.body {
+    @extend %body;
+}
+
+.boton {
+    @extend %boton;
+
+    &:hover {
+        @extend %Boton;
+        transition: .2s
+    }
+}
+
+
+@import './secciones/header';
+
+@import './secciones/index';
+@import './secciones/servicios';
+@import './secciones/venta';
+@import './secciones/nosotros';
+@import './secciones/autos';
+
+@import './secciones/footer';
+
+@import './movile/movile.scss';

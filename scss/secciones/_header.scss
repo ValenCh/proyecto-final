@@ -1,0 +1,35 @@
+.navColor {
+    background-color: #FFFF;
+    padding: 0;
+}
+
+#navbarNavDropdown {
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.secciones li {
+    padding: 0px 10px 0px 10px;
+}
+
+.nav-item:hover {
+    background-color: #c7c5c5bb;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.dropdown {
+    margin-right: 20px;
+}
+
+.Logo {
+    margin: 0px 0px 0px 10px;
+}
+
+.logo {
+    max-width: 110px;
+
+    &:hover {
+        max-width: 111px;
+    }
+}

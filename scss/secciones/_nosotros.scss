@@ -1,0 +1,53 @@
+.table-responsive {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.table2 {
+
+    th,
+    td {
+        border: solid black 1px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.n-info {
+    display: flex;
+    margin: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.n-ubicacion,
+.n-contacto {
+    border: black solid 1px;
+    padding: 20px;
+    margin: 20px;
+    overflow: auto;
+}
+
+.n-ubicacion,
+.n-contacto h2 {
+    text-align: center;
+}
+
+.agencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    img {
+        height: auto;
+        width: auto;
+        max-width: 50%;
+    }
+
+    p {
+        padding: 30px;
+        font-size: 20px;
+    }
+}

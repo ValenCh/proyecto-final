@@ -1,0 +1,68 @@
+$a: #5eedf7fb;
+$A: #08a9b5da;
+
+// Footer
+$facebookcolor: #24569a;
+$twittercolor: #1d9bf0;
+$whatsappcolor: #2fb944;
+
+// Body
+%body {
+    background-repeat: no-repeat;
+    background: rgb(238, 238, 238);
+    background: linear-gradient(200deg, rgba(238, 238, 238, 1) 5%, rgba(154, 154, 154, 1) 55%, rgba(78, 78, 78, 1) 100%);
+}
+
+%carta {
+    background: rgb(238, 238, 238);
+    background: linear-gradient(60deg, rgba(238, 238, 238, 1) 0%, rgba(175, 175, 175, 1) 60%);
+}
+
+%Carta {
+    background: rgb(54, 52, 52);
+    background: linear-gradient(77deg, rgba(54, 52, 52, 1) 0%, rgba(122, 120, 120, 1) 56%);
+}
+
+%boton {
+    background-color: rgb(20, 20, 20);
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+%Boton {
+    background-color: rgb(160, 160, 160);
+    color: rgb(20, 20, 20);
+}
+
+// Footer
+%facebook {
+    color: $facebookcolor;
+    transition: .3s;
+}
+
+%instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%twitter {
+    color: $twittercolor;
+    transition: .3s;
+}
+
+%whatsapp {
+    color: $whatsappcolor;
+    transition: .3s;
+}
+
+// Mixin
+@mixin Transition ($Tcolor, $Ttransition) {
+    background: rgb(54, 52, 52);
+    background: linear-gradient(45deg, rgba(54, 52, 52, 1) 0%, rgba(108, 108, 108, 1) 56%);
+    color: $Tcolor;
+    transition: $Ttransition;
+}

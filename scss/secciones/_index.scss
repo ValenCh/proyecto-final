@@ -1,0 +1,13 @@
+.articulos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .card {
+        max-width: 18rem;
+        margin: 20vh 10vh 20vh 10vh;
+        @extend %carta;
+    }
+}

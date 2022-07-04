@@ -1,0 +1,69 @@
+.autos {
+    img {
+        max-width: 89%;
+        margin: 20px;
+    }
+
+    padding: 10px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6";
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.c-img {
+    position: relative;
+    overflow: auto;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
+
+.txt {
+    text-align: center;
+    position: absolute;
+    transition: all 0.3s;
+    transform: scale(1.4);
+    opacity: 0;
+    color: #fff;
+    width: 39vh;
+    height: 23vh;
+    margin: 12% 17%;
+
+    &:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

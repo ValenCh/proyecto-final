@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aqui podras cambiar, comprar, o vender tu auto, camioneta o incluso tu motocicleta">
+  <meta name="keywords"
+    content="automotores ch, automotores, ch, CH, agencia, autos, coche, camioneta, comprar un auto, vender mi auto, cambiar mi auto, servicios, garantia, mi auto, mi coche, mi camioneta, mi vehiculo, 4x4">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- ICON -->
+  <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/shortcut icon.jpg">
+  <title>Automotores | venta</title>
+</head>
+
+<body class="body">
+  <!-- ---- NAV ---- -->
+  <nav class="navbar navbar-expand-lg navColor">
+    <div class="container-fluid">
+      <a class="navbar-brand Logo" href="./index.html"><img src="./img/logo.png" alt="Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav secciones">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./venta.html">Venta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Autos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-center pe-20" href="./catalogoN.html">Nuevos</a></li>
+              <li><a class="dropdown-item text-center" href="./catalogoU.html">Usados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="display-1 mt-5 text-center">¿En que estas interesado?</h2>
+          <hr class="separador">
+        </div>
+      </div>
+
+      <div class="contenedor">
+
+        <div class="row">
+          <div>
+            <h2 class="display-1 mt-5 text-center vender">¿Quieres comprar un auto?</h2>
+            <hr class="separador">
+          </div>
+        </div>
+        <p>Si estas interesado en alguno de nuestros autos contactanos <a href="./nosotros.html" class="a">aqui</a> y
+          arreglaremos todo para que tenga el mejor servicio</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2 class="display-1 mt-5 text-center vender">¿Quieres vender tu auto?</h2>
+            <hr class="separador">
+          </div>
+        </div>
+
+        <div class="Form">
+          <form action="#" method="get" class="form">
+            <label class="datosAuto">
+              <span>¿Cual es su auto?</span>
+              <input type="text" name="auto" placeholder="auto">
+              <span>¿Que moedelo es el auto?</span>
+              <input type="number" name="modelo" placeholder="2022">
+              <span>¿Cuantos Km recorridos tiene su auto?</span>
+              <input type="number" name="km recorridos" placeholder="50000km">
+
+              <p>Detalles del auto</p>
+              <textarea cols="50" rows="5" name="detalles del auto"></textarea>
+            </label>
+
+            <label class="datosPersonales">
+              <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido">
+
+              <input type="mail" name="mail" placeholder="AutomotoresCh@gmail.com">
+
+              <input type="tel" name="numero de telefono" placeholder="telefono">
+
+            </label>
+            <input type="submit" placeholder="enviar" id="send" class="boton">
+          </form>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <ol id="redes-sociales">
+      <li><a href="https://facebook.com" target="_blank" id="facebook"><i class="fa-brands fa-facebook"></i>
+        </a></li>
+      <li><a href="https://instagram.com" target="_blank" id="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com" target="_blank" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li><a href="https://whatsapp.com" target="_blank" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+    </ol>
+    <h4 id="autor">Valentino Ch</h4>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
