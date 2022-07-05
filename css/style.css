@@ -242,7 +242,6 @@
 
 .c-img {
   position: relative;
-  overflow: auto;
   cursor: pointer;
   display: flex;
   text-align: center; }
@@ -333,6 +332,6 @@
   .img6 {
     grid-area: img6; }
   .txt {
-    width: 49.5vh;
-    height: 29vh;
+    width: 64%;
+    height: 58%;
     margin: 12% 0 0 17%; } }
