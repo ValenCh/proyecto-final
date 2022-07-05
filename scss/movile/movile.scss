@@ -41,7 +41,12 @@
 }
 
 @media(max-width:576px) {
-
+    // index
+    .articulos{
+        .card {
+            margin: 9vh;
+            }
+    }
     // nosotros
     .table-responsive {
         display: block;
