@@ -31,23 +31,23 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav secciones">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+            <a class="nav-link" aria-current="page" href="./servicios.html">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="./venta.html">Venta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+            <a class="nav-link" href="./venta.html">Venta</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Autos
+              Catalogo
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item text-center pe-20" href="./catalogoN.html">Nuevos</a></li>
+              <li><a class="dropdown-item text-center active" href="./catalogoN.html">0KM</a></li>
               <li><a class="dropdown-item text-center" href="./catalogoU.html">Usados</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
           </li>
         </ul>
       </div>
@@ -65,9 +65,17 @@
       <div class="table">
         <div class="img1">
           <div class="c-img">
-            <img src="https://www.karvi.com.ar/blog/wp-content/uploads/2021/03/Cronos5-850x555.jpg" alt="Fiat Cronos" />
+            <img src="https://turinfiat.com.ar/wp-content/uploads/2021/03/cronos-790-x-463-px-19.jpg"
+              alt="Fiat Cronos" />
             <div class="txt">
-              <h3><br>Fiat Cronos</h3>
+              <h3>Fiat Cronos</h3>
+              <p><b>Puertas:</b> 4</p>
+              <p><b>Aceleración:</b> 0-100 km/h de 9,9 a 11,5 seg</p>
+              <p><b>Caballos de fuerza:</b> 99 a 130 CV</p>
+              <p><b>Caja de cambios:</b> automatica</p>
+
+              <!-- Button trigger modal -->
+              <a data-bs-toggle="modal" data-bs-target="#FiatCronos" class="ventana">Más </a>
             </div>
           </div>
         </div>
@@ -76,37 +84,66 @@
           <div class="c-img">
             <img src="https://cdn.motor1.com/images/mgl/vkekA/s3/toyota-hilux-2021.jpg  " alt="Toyota Hilux" />
             <div class="txt">
-              <h3><br>Toyota Hilux</h3>
+              <h3>Toyota Hilux</h3>
+              <p><b>Puertas:</b> 4</p>
+              <p><b>Aceleración:</b> 0-100 km/h en 10 seg</p>
+              <p><b>Caballos de fuerza:</b> 150 a 204 CV</p>
+              <p><b>Caja de cambios:</b> automatica</p>
+
+              <!-- Button trigger modal -->
+              <a data-bs-toggle="modal" data-bs-target="#ToyotaHilux" class="ventana">Más </a>
             </div>
           </div>
         </div>
 
         <div class="img3">
           <div class="c-img">
-            <img
-              src="https://1.bp.blogspot.com/-bKiw_1Fg-tA/YPcKcIJPi-I/AAAAAAADj5I/QHygiOtE56svnsfWtZT7bd0jYl14syeogCNcBGAsYHQ/s2048/Lanzamiento%2BToyota%2BYaris%2BPrecios%2BUruguay%2B2021%2B0km00003.jpg"
-              alt="Toyota Yaris" />
+            <img src="https://fotos.perfil.com/2021/02/25/trim/1280/720/toyota-corolla-gr-sport-1133794.jpg"
+              alt="Toyota Corolla" />
             <div class="txt">
-              <h3><br>Toyota Yaris</h3>
+              <h3>Corolla GR-Sport</h3>
+              <p><b>Puertas:</b> 4</p>
+              <p><b>Aceleración:</b> 0-100 km/h en 7,9 seg</p>
+              <p><b>Caballos de fuerza:</b> 170 CV</p>
+              <p><b>Caja de cambios:</b> automatica</p>
+
+              <!-- Button trigger modal -->
+              <a data-bs-toggle="modal" data-bs-target="#CorollaGR-Sport" class="ventana">Más </a>
             </div>
           </div>
         </div>
 
         <div class="img4">
           <div class="c-img">
-            <img src="https://fotos.perfil.com/2021/02/25/trim/1280/720/toyota-corolla-gr-sport-1133794.jpg"
-              alt="Toyota Corolla" />
+            <img src="https://www.topgear.com/sites/default/files/2022/06/1-Toyota-Yaris.jpg?w=892&h=502"
+              alt="Toyota Yaris" />
             <div class="txt">
-              <h3>Corolla GR-Sport</h3>
+              <h3>Toyota Yaris</h3>
+              <p><b>Puertas:</b> 4</p>
+              <p><b>Aceleración:</b> 0-100 km/h en 11,8 seg</p>
+              <p><b>Caballos de fuerza:</b> 107 a 261 CV</p>
+              <p><b>Caja de cambios:</b> manual</p>
+
+              <!-- Button trigger modal -->
+              <a data-bs-toggle="modal" data-bs-target="#ToyotaYaris" class="ventana">Más </a>
             </div>
           </div>
         </div>
 
         <div class="img5">
           <div class="c-img">
-            <img src="https://elonce-media.elonce.com/fotos-nuevo/2018/10/29/o_1540848070.jpg" alt="Renault Sandero " />
+            <img
+              src="https://cdn.group.renault.com/ren/ar/modelos/sandero/renault-sandero-b46-ph2-actualizacion-header-001.jpg.ximg.mediumx2.webp/99c3521952.webp"
+              alt="Renault Sandero " />
             <div class="txt">
-              <h3><br>Renault Sandero</h3>
+              <h3>Renault Sandero</h3>
+              <p><b>Puertas:</b> 4</p>
+              <p><b>Aceleración:</b> 0-100 km/h en 8,11 seg</p>
+              <p><b>Caballos de fuerza:</b> 170 CV</p>
+              <p><b>Caja de cambios:</b> automatica</p>
+
+              <!-- Button trigger modal -->
+              <a data-bs-toggle="modal" data-bs-target="#RenaultSandero" class="ventana">Más </a>
             </div>
           </div>
         </div>
@@ -115,7 +152,14 @@
           <div class="c-img">
             <img src="https://fotos.perfil.com/2021/11/24/trim/1280/720/ford-ranger-1274507.jpg" alt="Ford Ranger" />
             <div class="txt">
-              <h3><br>Ford Ranger</h3>
+              <h3>Ford Ranger</h3>
+              <p><b>Puertas:</b> 4</p>
+              <p><b>Aceleración:</b> 0-100 km/h de 8,5 a 12,7 seg</p>
+              <p><b>Caballos de fuerza:</b> 115 a 145 CV</p>
+              <p><b>Caja de cambios:</b> manual</p>
+
+              <!-- Button trigger modal -->
+              <a data-bs-toggle="modal" data-bs-target="#FordRanger" class="ventana">Más </a>
             </div>
           </div>
         </div>
@@ -123,6 +167,171 @@
       </div>
 
     </div>
+
+
+
+    <!-- Modal Fiat Cronos-->
+    <div class="modal fade" id="FiatCronos" tabindex="-1" aria-labelledby="Fiat Cronos" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title tituloModal" id="exampleModalLabel">Fiat Cronos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="ps-4 pb-2">Seguridad</h5>
+            <ul>
+              <li>2 Airbags frontales y 2 Laterales (delanteros)</li>
+              <li>Alerta de cinturones de seguridad</li>
+              <li>Apoyacabezas delanteros</li>
+              <li>Apoyacabezas traseros regulables en altura (x 3)</li>
+              <li>Cinturones de seguridad delanteros</li>
+              <li>Cinturones de seguridad posteriores de 3 puntos</li>
+              <li>Inmovilizador electrónico de motor (Fiat Code)</li>
+              <li>Sensor de estacionamiento trasero</li>
+              <li>Sistema Emergency Stop Signaling (ESS)</li>
+              <li>Sistema de frenos ABS + EBD</li>
+              <li>Sistema de sujeción de sillas para niños (ISOFIX)</li>
+              <li>Control de tracción y estabilidad</li>
+              <li>Sistema de asistencia al arranque en pendiente (HLA)</li>
+              <li>Refuerzos en acero de alta resistencia</li>
+              <li>Sensores de estacionamiento traseros</li>
+              <li>Sistema de Monitoreo de Presión de Neumáticos (TPMS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Toyota Hilux-->
+    <div class="modal fade" id="ToyotaHilux" tabindex="-1" aria-labelledby="Toyota Hilux" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title tituloModal" id="exampleModalLabel">Toyota Hilux</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="ps-4 pb-2">Seguridad</h5>
+            <ul>
+              <li>ABS con Distribución Electrónica de la fuerza de Frenado y Asistente de Frenado de Emergencia</li>
+              <li>Control de estabilidad (VSC)</li>
+              <li>7 Airbags: Frontales y laterales, de rodilla para el conductor y de cortina en ambos lados</li>
+              <li>Asistente de arranque en pendientes (HAC)</li>
+              <li>Faro antiniebla trasero</li>
+              <li>Control de tracción (TRC) y Control de tracción activo (A-TRC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Corolla GR-Sport-->
+    <div class="modal fade" id="CorollaGR-Sport" tabindex="-1" aria-labelledby="Toyota Hilux" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title tituloModal" id="exampleModalLabel">Corolla GR-Sport</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="ps-4 pb-2">Seguridad</h5>
+            <ul>
+              <li>Monitor con cámara de estacionamiento</li>
+              <li>Control de estabilidad (VSC) y control de tracción (TRC).</li>
+              <li>7 Airbags: Frontales y laterales, de rodilla para el conductor y de cortina en ambos lados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Toyota Yaris-->
+    <div class="modal fade" id="ToyotaYaris" tabindex="-1" aria-labelledby="Toyota Yaris" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title tituloModal" id="exampleModalLabel">Toyota Yaris</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="ps-4 pb-2">Seguridad</h5>
+            <ul>
+              <li>Incluye 7 airbags de serie (frontales, laterales, de cortina y de rodilla para el conductor)</li>
+              <li>Frenos ABS con EBD y BA, airbags frontales</li>
+              <li>Control de estabilidad y tracción</li>
+              <li>Asistente de arranque en pendientes</li>
+              <li>Faros antiniebla traseros</li>
+              <li>Barras de protección lateral y ganchos isofix</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Renault Sandero-->
+    <div class="modal fade" id="RenaultSandero" tabindex="-1" aria-labelledby="Renault Sandero" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title tituloModal" id="exampleModalLabel">Renault Sandero</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body cuerpoModal">
+            <h5 class="ps-4 pb-2">Seguridad</h5>
+            <ul>
+              <li>4 airbags de serie. Alarma Perimétrica.</li>
+              <li> Estructura reforzada</li>
+              <li>Control Electrónico de Estabilidad (ESP), que recupera la trayectoria en maniobras bruscas,
+                controlando la tracción y la frenada de cada rueda</li>
+              <li>Frenos ABS</li>
+              <li>Cinturones de seguridad de 3 puntos y apoyacabezas regulables en altura</li>
+              <li>Asistencia de arranque en pendiente (HSA), impide que el auto retroceda al momento de arrancar en un
+                terreno inclinado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Ford Ranger-->
+    <div class="modal fade" id="FordRanger" tabindex="-1" aria-labelledby="Ford Ranger" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title tituloModal" id="exampleModalLabel">Ford Ranger</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="ps-4 pb-2">Seguridad</h5>
+            <ul>
+              <li>7 airbags (2 frontales para conductor y acompañante, 2 de torax para las plazas delanteras, 2 de tipo
+                cortina para las plazas traseras y delanteras y 1 de rodilla para el conductor)</li>
+              <li> Control electrónico de descenso (Asiste electrónicamente al conductor para mantener el control sin
+                derrapar al descender por pendientes empinadas de baja adherencia)</li>
+
+              <li>Control antivuelco (Ayuda a impedir que el vehículo se encuentre en una situación extrema de vuelco y
+                vuelve a estabilizarlo)</li>
+              <li>Control automático de luces altas</li>
+              <li>Detector de fatiga (Cuando el vehículo se está moviendo de forma diferente a un perfil de manejo
+                configurado y alertará al conductor)</li>
+              <li>Control electrónico de estabilidad</li>
+              <li>Control de tracción (El control de tracción evita que una rueda sin adherencia gire, utilizando el
+                freno de manera individual, y transfiere el 100% del torque a las ruedas que sí tienen tracción.
+                Funciona sobre las 4 ruedas (en modo 4x4))</li>
+              <li>Control de carga adaptativo (Detecta la cantidad de carga y su distribución en cada eje y ajusta los
+                parámetros del control electrónico de estabilidad para optimizar el sistema de control y seguridad)</li>
+              <li>Asistente al arranque en pendiente</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
   </main>
 
   <footer class="footer">

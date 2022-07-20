@@ -19,7 +19,7 @@
     margin: 15px;
 
     &:hover {
-        @include Transition(#c4c0c0, .7s);
+        @include Transition(#c4c0c0, .5s);
     }
 }
 
