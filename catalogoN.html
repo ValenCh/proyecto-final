@@ -52,7 +52,7 @@
                 <i class="fa-solid fa-money-bill"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item text-center" href="#" id="carrito">
+                <li><a data-bs-toggle="modal" data-bs-target="#carritoModal" class="dropdown-item text-center" href="#" id="carrito">
                   <i class="fa-solid fa-cart-shopping"></i>
                 </a></li>
                 <li><a class="dropdown-item text-center" href="#" id="busqueda">
@@ -90,9 +90,14 @@
               <p><b>Aceleración:</b> 0-100 km/h de 9,9 a 11,5 seg</p>
               <p><b>Caballos de fuerza:</b> 99 a 130 CV</p>
               <p><b>Caja de cambios:</b> automatica</p>
-
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#FiatCronos" class="ventana">Más </a>
+              <p class="precio">3177000</p>
+              
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#FiatCronos" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="0">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -106,9 +111,13 @@
               <p><b>Aceleración:</b> 0-100 km/h en 10 seg</p>
               <p><b>Caballos de fuerza:</b> 150 a 204 CV</p>
               <p><b>Caja de cambios:</b> automatica</p>
-
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#ToyotaHilux" class="ventana">Más </a>
+              <p class="precio">7777000</p>
+              
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#ToyotaHilux" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="1">Comprar</a>
+              </div>
             </div>
           </div>
         </div>
@@ -123,9 +132,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 7,9 seg</p>
               <p><b>Caballos de fuerza:</b> 170 CV</p>
               <p><b>Caja de cambios:</b> automatica</p>
+              <p class="precio">6647000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#CorollaGR-Sport" class="ventana">Más </a>
+              
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#CorollaGR-Sport" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="2">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -140,9 +155,14 @@
               <p><b>Aceleración:</b> 0-100 km/h en 11,8 seg</p>
               <p><b>Caballos de fuerza:</b> 107 a 261 CV</p>
               <p><b>Caja de cambios:</b> manual</p>
-
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#ToyotaYaris" class="ventana">Más </a>
+              <p class="precio">3432000</p>
+              
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#ToyotaYaris" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="3">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -158,9 +178,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 8,11 seg</p>
               <p><b>Caballos de fuerza:</b> 170 CV</p>
               <p><b>Caja de cambios:</b> automatica</p>
+              <p class="precio">3242000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#RenaultSandero" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#RenaultSandero" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="4">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -174,9 +200,15 @@
               <p><b>Aceleración:</b> 0-100 km/h de 8,5 a 12,7 seg</p>
               <p><b>Caballos de fuerza:</b> 115 a 145 CV</p>
               <p><b>Caja de cambios:</b> manual</p>
+              <p class="precio">6137000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#FordRanger" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#FordRanger" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="5">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -345,8 +377,25 @@
       </div>
     </div>
 
-
-
+    
+    <!-- MODAL CARRITO -->
+    <div class="modal fade modal-lg" id="carritoModal" tabindex="-1" aria-labelledby="carritoModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body cuerpoModal cuerpoCarrito justify-content-center">
+              
+          </div>
+          <div class="modal-footer justify-content-center flex-column">
+            <h4 id="total" class="pb-3">Total: $0</h4>
+            <button type="button" class="btn btn-primary boton finalizarCompra">comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </main>
@@ -369,6 +418,7 @@
   </script>
 
   <script src="./js/main.js"></script>
+  <script src="./js/buscador.js"></script>
 </body>
 
 </html>

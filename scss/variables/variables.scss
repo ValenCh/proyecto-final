@@ -29,9 +29,11 @@ $whatsappcolor: #2fb944;
     text-decoration: none;
     padding: .6rem;
     border-radius: 5px;
+    border: 0;
 }
 
 %Boton {
+    border: 0;
     background-color: rgb(160, 160, 160);
     color: rgb(20, 20, 20);
 }
