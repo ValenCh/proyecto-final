@@ -112,3 +112,21 @@
 .tituloModal {
     padding-left: 37%;
 }
+
+.opciones-autos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.precio {
+    display: none;
+}
+
+.eliminarX {
+    font-size: 3.5vh;
+    padding: 0.5vh;
+    &:hover{
+        color: red;
+        cursor: pointer;
+    }
+}

@@ -53,7 +53,7 @@
               <i class="fa-solid fa-money-bill"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item text-center" href="#" id="carrito">
+              <li><a data-bs-toggle="modal" data-bs-target="#carritoModal" class="dropdown-item text-center" href="#" id="carrito">
                 <i class="fa-solid fa-cart-shopping"></i>
               </a></li>
               <li><a class="dropdown-item text-center" href="#" id="busqueda">
@@ -90,9 +90,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 10,7 seg</p>
               <p><b>Caballos de fuerza:</b> 101 CV</p>
               <p><b>Kilómetros:</b> 149500 km</p>
+              <p class="precio">2849900</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#VW-GolTrend" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#VW-GolTrend" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="6">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -107,9 +113,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 15,8 seg</p>
               <p><b>Caballos de fuerza:</b> 70 CV</p>
               <p><b>Kilómetros:</b> 100500 km</p>
+              <p class="precio">1980000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#FiatPalio" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#FiatPalio" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="7">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -124,9 +136,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 10,6 seg</p>
               <p><b>Caballos de fuerza:</b> 120 CV</p>
               <p><b>Kilómetros:</b> 71500 km</p>
+              <p class="precio">3699000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#FordFiesta" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#FordFiesta" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="8">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -142,9 +160,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 17, 1 seg</p>
               <p><b>Caballos de fuerza:</b> 85 CV</p>
               <p><b>Kilómetros:</b> 101500 km</p>
+              <p class="precio">1650000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#RenaultClio" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#RenaultClio" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="9">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -160,9 +184,15 @@
               <p><b>Aceleración:</b> 0-100 km/h en 11.79 seg</p>
               <p><b>Caballos de fuerza:</b> 92 CV</p>
               <p><b>Kilómetros:</b> 71500 km</p>
+              <p class="precio">1449000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#CorsaClassic" class="ventana">Más </a>
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#CorsaClassic" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="10">Comprar</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -178,9 +208,16 @@
               <p><b>Aceleración:</b> 0-100 km/h de 7,1 a 8,7 seg</p>
               <p><b>Caballos de fuerza:</b> 92 CV</p>
               <p><b>Kilómetros:</b> 91500 km</p>
+              <p class="precio">3699000</p>
 
-              <!-- Button trigger modal -->
-              <a data-bs-toggle="modal" data-bs-target="#Mercedes-Benz" class="ventana">Más </a>
+
+
+              <div class="opciones-autos">
+                <!-- Button trigger modal -->
+                <a data-bs-toggle="modal" data-bs-target="#Mercedes-Benz" class="ventana">Más </a>
+                <a href="#" class="ventana carritoDeCompra" data-id="11">Comprar</a>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -323,6 +360,25 @@
       </div>
     </div>
 
+    <!-- MODAL CARRITO -->
+    <div class="modal fade modal-lg" id="carritoModal" tabindex="-1" aria-labelledby="carritoModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body cuerpoModal cuerpoCarrito justify-content-center">
+              
+          </div>
+          <div class="modal-footer justify-content-center flex-column">
+            <h4 id="total" class="pb-3">Total: $0</h4>
+            <button type="button" class="btn btn-primary boton finalizarCompra">comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </main>
 
@@ -344,6 +400,7 @@
   </script>
 
   <script src="./js/main.js"></script>
+  <script src="./js/buscador.js"></script>
 
 </body>
 

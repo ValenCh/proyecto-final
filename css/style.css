@@ -19,9 +19,11 @@
   color: #eeeeee;
   text-decoration: none;
   padding: .6rem;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 0; }
 
 .boton:hover {
+  border: 0;
   background-color: #a0a0a0;
   color: #141414; }
 
@@ -326,6 +328,20 @@
 
 .tituloModal {
   padding-left: 37%; }
+
+.opciones-autos {
+  display: flex;
+  justify-content: space-evenly; }
+
+.precio {
+  display: none; }
+
+.eliminarX {
+  font-size: 3.5vh;
+  padding: 0.5vh; }
+  .eliminarX:hover {
+    color: red;
+    cursor: pointer; }
 
 .footer {
   display: flex;
