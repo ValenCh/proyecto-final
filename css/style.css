@@ -222,7 +222,8 @@
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "img1 img2 img3" "img4 img5 img6"; }
+  grid-template-areas: "img1 img2 img3"
+ "img4 img5 img6"; }
 
 .img1 {
   grid-area: img1; }
@@ -378,7 +379,9 @@
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "img1 img2" "img3 img4" "img5 img6"; }
+    grid-template-areas: "img1 img2"
+ "img3 img4"
+ "img5 img6"; }
   .img1 {
     grid-area: img1; }
   .img2 {
@@ -404,7 +407,12 @@
     grid-auto-columns: .1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6"; }
+    grid-template-areas: "img1"
+ "img2"
+ "img3"
+ "img4"
+ "img5"
+ "img6"; }
   .img1 {
     grid-area: img1; }
   .img2 {

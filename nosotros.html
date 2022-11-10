@@ -48,6 +48,12 @@
           <li class="nav-item">
             <a class="nav-link active" href="./nosotros.html">Nosotros</a>
           </li>
+
+          <li class="nav-item">
+            <a data-bs-toggle="modal" data-bs-target="#carritoModal" class="nav-link dropdown-item text-center" href="#" id="carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -110,6 +116,27 @@
         src="https://www.eleconomista.com.mx/__export/1606922199754/sites/eleconomista/img/2020/05/26/agencia_de_autos_shutterstock_668480929.jpg_1093282975.jpg"
         alt="Nuesta Agencia" />
     </section>
+
+
+
+    <!-- MODAL CARRITO -->
+    <div class="modal fade modal-lg" id="carritoModal" tabindex="-1" aria-labelledby="carritoModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body cuerpoModal cuerpoCarrito justify-content-center">
+              
+          </div>
+          <div class="modal-footer justify-content-center flex-column">
+            <h4 id="total" class="pb-3">Total: $0</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </main>
 
   <footer class="footer">
@@ -127,6 +154,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
