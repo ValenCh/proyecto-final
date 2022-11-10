@@ -1,3 +1,4 @@
+// como tenia un error cuando usaba el main en las otras paginas, decidi crear esto para mostrar el carrito y que no haya ningun error 
 const todosLosAutos = document.querySelector('.autos');
 let contenedorCarrito = document.querySelector('.cuerpoCarrito');
 let total = document.querySelector('#total')

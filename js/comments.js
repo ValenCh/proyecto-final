@@ -48,7 +48,6 @@ const obtenerDatosDeUsuario = () =>{
                     comentarios.appendChild(row);
                 
                 });
-            console.log(data)
             })
     } catch{
         console.log("Error")
