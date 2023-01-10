@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "nodemon": "^2.0.18"
   },
   "name": "proyecto-final-3",
